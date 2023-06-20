@@ -1,5 +1,5 @@
 const AppConfig  = {
-    apiUrl : "http://localhost/hedesh.ir.backend"   
+    apiUrl : "http://your-domain.com"   
 }
 
 export default AppConfig;
