@@ -20,7 +20,7 @@ const Pagination = ({ itemCount, pageSize, currentPage, onPageChanged }) => {
             <Link
               className="page-link"
               onClick={() => onPageChanged(page)}
-              to="#"
+              to={`?page=${page}`}
             >
               {page}
             </Link>
