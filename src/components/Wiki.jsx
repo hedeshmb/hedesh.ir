@@ -3,6 +3,7 @@ import { getWiki } from "../services/WikiService";
 import Pagination from "./common/Pagination";
 import { paginate } from "../utils/paginate";
 import SearchBox from "./common/SearchBox";
+import { getWikiList } from "../demo/WikiData";
 
 const Wiki = () => {
   const [list, setList] = useState([]);
@@ -12,7 +13,8 @@ const Wiki = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const { data: items } = await getWiki();
+      // const { data: items } = await getWiki();
+      const items = await getWikiList();
       setList(items);
     }
     fetchData();

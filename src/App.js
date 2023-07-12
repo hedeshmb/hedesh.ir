@@ -24,7 +24,7 @@ function App() {
         <Route path="/login" component={LoginForm} />
         <ProtectedRoute path="/add" component={WikiForm} />
         <Route path="/" exact component={Wiki} />
-        <Route path="?page=:pageId" component={Wiki} />
+        <Route path="/page/:pageId" component={Wiki} />
       </Switch>
     </main>
   );
